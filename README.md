@@ -37,7 +37,7 @@ This is the screenshot of the challenge solution by me.
 ### Links
 
 - Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/responsive-page-using-vanilla-css-and-js-lZh9AVpYf)
-- Live Site URL: [Link](https://github.io/FEM-Base-Apparel-page)
+- Live Site URL: [Link](https://v-codey.github.io/FEM-Base-Apparel-page/)
 
 ## My process
 

@@ -36,16 +36,16 @@ Users should be able to:
 This is the screenshot of the challenge solution by me.
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/responsive-page-using-vanilla-css-and-js-lZh9AVpYf)
 - Live Site URL: [Link](https://github.io/FEM-Base-Apparel-page)
 
 ## My process
 
 I always try to get as close as possible to the provided design. As the free section of frontend mentor does not include any figma or actual dimensions rather an style guide which includes screen-size, colors, font-family,  so I had to just eye ball things.
 
-    - First I try to identify the blocks in which I can divide the website,then further divide them into children div so it will be little easier for me to manage them.
-    - Then I compare things that are similar in mobile view and desktop view.
-    - In this challenge I tried to approach with the mobile first design technique.
+- First I try to identify the blocks in which I can divide the website,then further divide them into children div so it will be little easier for me to manage them.
+- Then I compare things that are similar in mobile view and desktop view.
+- In this challenge I tried to approach with the mobile first design technique.
     
 
 ### Built with

@@ -1,0 +1,269 @@
+
+/* Google font include */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* ---------------- CSS Reset ---------------- */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- root setup ---------------- */
+:root{
+    /* ### Primary */
+    --primary-1: hsl(0, 36%, 70%);
+    --primary-2:  hsl(0, 93%, 68%);
+
+    /* ### Neutral */
+    --neutral: hsl(0, 6%, 24%);
+
+    /* ### Gradients */
+    --gradient-1: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 100%, 96%));
+    --gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+
+/* ---------------- Body CSS ---------- */
+
+
+body{
+    background: url('./images/bg-pattern-desktop.svg');
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+main{
+    display: flex;
+}
+
+.desktop-img{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 7.3rem;
+    padding-left: 3rem;
+}
+
+.brand-logo{
+    width: 140px;
+}
+
+.mobile-img{
+    background: url('./images/hero-mobile.jpg') ;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 23.45rem;
+}
+
+/* ---------------- Text part ---------------- */
+
+.text-part{
+    text-align: center;
+    padding: 0 10%;
+    padding-bottom: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.intro-heading{
+    margin: 4rem auto 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.75rem;
+    color: var(--neutral);
+    line-height: 1;
+}
+
+.intro-heading span{
+    font-weight: 300;
+    color: var(--primary-1);
+}
+
+.intro-para{
+    width: 85%;
+    margin: 1rem auto;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--primary-1);
+}
+
+/* ---------------- email section ---------------- */
+.email-form{
+    position: relative;
+    --form-height: 3.5rem;
+    margin: 3rem auto 0;
+    min-width: 22rem;
+    width: 90%;
+    color: var(--primary-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--primary-1);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+
+.email-input{
+    border: none;
+    height: var(--form-height);
+    width: 68%;
+    background-color: transparent;
+    color: var(--primary-1);
+    font-weight: 600;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+}
+
+.email-form button{
+    background: var(--gradient-2);
+    border: none;
+    height: var(--form-height);
+    width: 5rem;
+    border-radius: 2rem;
+    box-shadow: 4px 5px 20px 0px var(--primary-1);
+}
+
+
+.email-form button img{
+    width: 1rem;
+}
+
+
+.email-form button:hover{
+    margin-right: -2px;
+    box-shadow: 4px 5px 20px 0px var(--primary-1), inset 0 0px 38px 0px #ffffff6b;
+}
+
+.email-input::placeholder{
+    color: var(--primary-1);
+    opacity: 0.5;
+}
+
+
+.email-input:focus{
+    outline: none;
+}
+
+/* ---------------- Error message and icon (by default Hidden) ---------- */
+
+
+.error-icon{
+    display: none;
+    position: absolute;
+    right: 23%;
+    pointer-events: none;
+}
+
+.error-msg{
+    display: none;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 3rem;
+    margin-top: 1rem;
+    color: var(--primary-2);
+}
+
+.error {
+    border: 2px solid var(--primary-2);
+}
+
+
+/* ---------------- 👇👇Media queries for bigger screens👇👇 ---------- */
+
+
+
+@media (min-width: 800px) {
+
+    .mobile-img{
+        display: none;
+    }
+
+    .desktop-img{
+        display: block;
+        background: url("./images/hero-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        width: 40rem;
+        height: 100vh;
+        max-width: 50%;
+    } 
+
+    .left-part{
+        width: 35%;
+        min-width: 35rem;
+        margin: 0 auto;
+        padding-left: 3rem;
+        height: 90vh;
+    }
+
+    
+    .logo{
+        margin: 2rem auto;
+        padding-left: 0;
+    }
+
+    .brand-logo{
+        width: 160px;
+    }
+    
+    .text-part{
+        margin-top: 5rem ;
+        text-align: left;
+        padding: 0;
+    }
+
+    .intro-heading, .intro-para, .email-form{
+        width: auto;
+    }
+
+    .intro-heading{
+        font-size: 4rem;
+
+    }
+
+    .email-form{
+        margin: 0;
+        margin-top: 3rem;
+        width: 28rem;
+    }
+
+
+    .email-form button{
+        width: 6rem;
+    }
+
+}
+/* ----------------👆 Media queries ends 👆---------- */
+
+
+
+
+/* ---------------- 👇👇 footer style 👇👇 ---------- */
+
+.attribution {
+    height: fit-content;
+    padding: 8px;
+    background-color: hsla(0, 0%, 15%, 0.938);
+    font-size: 14px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+    letter-spacing: 2px;
+    color: hsl(59, 98%, 63%);
+
+}

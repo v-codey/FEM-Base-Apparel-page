@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+
+  <title>Frontend Mentor | Base-apparel </title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <main class="container">
+
+    <section class="left-part">
+      <div class="logo">
+        <img class="brand-logo" src="./images/logo.svg" alt="brand logo">
+      </div>
+
+      <div class="mobile-img ">
+        <!-- this div will stay hidden in the desktop view -->
+      </div>
+
+      <section class="text-part">
+        <h1 class="intro-heading"> <span> We're </span> coming soon </h1>
+        
+        <p class="intro-para">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add you email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        
+        <form action="#"  class="email-form ">
+          <input class="email-input" type="email" placeholder="Email Address">
+          <img class="error-icon" src="./images/icon-error.svg" alt="error-in-email" >
+          <button id="email-submit" type="submit" class="btn" >
+            <img src="./images/icon-arrow.svg" alt="email submit">
+          </button>
+        </form>
+        <p class="error-msg"> Please provide a valid email </p>
+
+      </section>
+    </section>
+
+    <div class="desktop-img">
+       <!-- this div will stay hidden in the mobile view -->
+    </div>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/v-codey" target="_blank">v-codey</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
